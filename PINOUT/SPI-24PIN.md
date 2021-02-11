@@ -1,4 +1,4 @@
-# EPD General PINOUT
+# EPD PINOUT (24 PIN)
 
 ## Reference design
 
@@ -9,54 +9,45 @@
 
 ## Connector
 
-| PIN# | Connector      | Interface |
-| ---- | -------------- | --------- |
-| 24   | FH12-24S-0.5SH | SPI       |
-| 34   | FH12-34S-0.5SH | SPI       |
+- FH12-24S-0.5SH
+- FH12-34S-0.5SH
 
-## 24PIN Definition
+## Definition
 
 |   # | Type |               Name | Description                                | Note                       |
 | --: | ---: | -----------------: | :----------------------------------------- | :------------------------- |
-|  01 |   NC |                 NC | Keep Open                                  |                            |
-|  02 |    O |                GDR | N-Channel MOSFET gate drive control        |                            |
+|  01 |   NC |                 NC | No connection                              |                            |
+|  02 |    O |                GDR | N-Channel MOS-FET gate drive control       |                            |
 |  03 |    O |               RESE | Current sense input for the control loop   | [RESE](#rese)              |
-|  04 |    C |     V<sub>GL</sub> | Negative gate driving voltage              |                            |
-|  05 |    C |     V<sub>GH</sub> | Positive gate driving voltage              |                            |
+|  04 |  PWR |     V<sub>GL</sub> | Negative gate driving voltage              | Driving voltage            |
+|  05 |  PWR |     V<sub>GH</sub> | Positive gate driving voltage              | Driving voltage            |
 |  06 |    O |    T<sub>SCL</sub> | (I2C) Sensor Clock                         | [Digital Temperature][dt]  |
 |  07 |  I/O |    T<sub>SDA</sub> | (I2C) Sensor Data                          | [Digital Temperature][dt]  |
 |  08 |    I |     BS<sub>1</sub> | Bus selection                              | [BS1](#bs1)                |
 |  09 |    O |               BUSY | Busy state output                          | [BUSY](#busy)              |
-|  10 |    I |               RES# | Reset                                      | [SPI](#spi), [RES#](#resn) |
+|  10 |    I |               RES# | Global reset pin                           | [SPI](#spi), [RES#](#resn) |
 |  11 |    I |               D/C# | (SPI) Data/Command control                 | [SPI](#spi), [D/C#](#dcn)  |
-|  12 |    I |                CS# | (SPI SS) Chip select input                 | [SPI](#spi), [CS#](#csn)   |
+|  12 |    I |                CS# | (SPI SS) Chip select                       | [SPI](#spi), [CS#](#csn)   |
 |  13 |  I/O |      D<sub>0</sub> | (SPI SCLK) Serial clock                    | [SPI](#spi)                |
 |  14 |  I/O |      D<sub>1</sub> | (SPI MOSI) Serial data in                  | [SPI](#spi)                |
-|  15 |    I |   V<sub>DD</sub>IO | (SPI VCC) Power Supply for interface logic |                            |
-|  16 |    I |     V<sub>DI</sub> | Power Supply for the chip                  |                            |
-|  17 |      |     V<sub>SS</sub> | (GND) Ground                               |                            |
-|  18 |    C |     V<sub>DD</sub> | Corelogic power                            |                            |
-|  19 |    C |     V<sub>PP</sub> | Power Supply for OTP programming           |                            |
-|  20 |    C |     V<sub>SH</sub> | Positive source driving voltage            |                            |
-|  21 |    C | PRE V<sub>GH</sub> | Power Supply for `VGH` and `VSH`           |                            |
-|  22 |    C |     V<sub>SL</sub> | Negative source driving voltage            |                            |
-|  23 |    C | PRE V<sub>GL</sub> | Power Supply for `VCOM`, `VGL` and `VSL`   |                            |
-|  24 |    C |    V<sub>COM</sub> | `VCOM` driving voltage                     |                            |
+|  15 |    I |   V<sub>DD</sub>IO | (SPI VCC) Power Supply for interface logic | Power Supply               |
+|  16 |    I |     V<sub>DI</sub> | Power Supply for the chip                  | Power Supply               |
+|  17 |  GND |     V<sub>SS</sub> | (GND) Ground                               |                            |
+|  18 |  PWR |     V<sub>DD</sub> | Corelogic power                            |                            |
+|  19 |  PWR |     V<sub>PP</sub> | Power Supply for OTP programming           | Power Supply               |
+|  20 |  PWR |     V<sub>SH</sub> | Positive source driving voltage            | Driving voltage            |
+|  21 |  PWR | PRE V<sub>GH</sub> | Power Supply for `VGH` and `VSH`           | Power Supply               |
+|  22 |  PWR |     V<sub>SL</sub> | Negative source driving voltage            | Driving voltage            |
+|  23 |  PWR | PRE V<sub>GL</sub> | Power Supply for `VCOM`, `VGL` and `VSL`   | Power Supply               |
+|  24 |  PWR |    V<sub>COM</sub> | `VCOM` driving voltage                     | Driving voltage            |
 
-```plain
-I: Input
-O: Output
-C: PWR
-NC: No Connection
-```
-
-[dt]: sensors/lm75.md
+[dt]: ../sensors/lm75.md
 
 ## Note
 
 ### CSn
 
-This pin (`CS#`) is the chip select input connecting to the MCU.
+This pin (`CS#`) is the Chip select connecting to the MCU.
 <br>The chip is enabled for MCU communication only when `CS#` is pulled _LOW_.
 
 ### D/Cn

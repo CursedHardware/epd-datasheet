@@ -3,7 +3,7 @@
 > Electronic Paper Display
 
 - [Dot matrix font family](font-family.md)
-- [General PINOUT Definition](PINOUT.md)
+- [PINOUT Definition](PINOUT)
 - [List of Display](epd-display.csv)
 - [List of Driver IC](https://cursedhardware.github.io/epd-driver-ic/)
 - [List of Sensor](sensors)
