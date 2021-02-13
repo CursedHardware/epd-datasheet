@@ -29,7 +29,7 @@
 |  11 |    I |                            CS# | S1/S2 | (SPI SS) Chip select                      | [SPI][spi]               |
 |  12 |    I |                            SCL |       | (SPI SCLK) Serial clock                   | [SPI][spi]               |
 |  13 |  I/O |                            SDA |       | (SPI MOSI) Serial data in                 | [SPI][spi]               |
-|  14 |  I/O |               L<sup>SYNC</sup> | M1/M2 | 2 + 2 Cascade Sync Signal                 |                          |
+|  14 |  I/O |             L/R<sup>SYNC</sup> | M1/M2 | 2 + 2 Cascade Sync Signal                 |                          |
 |  15 |  I/O |           M1/M2<sup>SYNC</sup> | M1/M2 | 2 + 2 Cascade Sync Signal                 |                          |
 |  16 |  I/O |           M2/M1<sup>SYNC</sup> | M1/M2 | 2 + 2 Cascade Sync Signal                 |                          |
 |  17 |  PWR |               V<sub>DD</sub>IO | M1/M2 | (SPI VCC) IO voltage supply               |                          |
@@ -54,3 +54,14 @@
 [rese]: SPI-24PIN.md#rese
 [resn]: SPI-24PIN.md#resn
 [spi]: SPI-24PIN.md#spi
+
+## Cascade
+
+|                   M1 | PIN# | PIN# | M2                   |
+| -------------------: | ---: | :--- | :------------------- |
+|                  SCL |   12 | 12   | SCL                  |
+|                  SDA |   13 | 13   | SDA                  |
+|     L<sup>SYNC</sup> |   14 | 16   | M2/M1<sup>SYNC</sup> |
+| M1/M2<sup>SYNC</sup> |   15 | 15   | M2/M1<sup>SYNC</sup> |
+| M2/M1<sup>SYNC</sup> |   16 | 14   | R<sup>SYNC</sup>     |
+|      V<sub>COM</sub> |   26 | 26   | V<sub>COM</sub>      |

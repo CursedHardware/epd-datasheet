@@ -26,7 +26,7 @@
 |   8 |    I |             RES# | Global reset pin                | [SPI][spi], [RES#][resn]  |
 |   9 |    O |             BUSY | Busy state output               | [BUSY][busy]              |
 |  10 |    I |   BS<sub>1</sub> | Bus selection                   | [BS1][bs1]                |
-|  11 |  PWR |   V<sub>DD</sub> | (SPI VDD) Digital power input   |                           |
+|  11 |  PWR | V<sub>DD</sub>IO | (SPI VDD) Digital power input   |                           |
 |  12 |  PWR |   V<sub>DL</sub> | Negative source driving voltage | Driving voltage           |
 |  13 |  PWR |   V<sub>DH</sub> | Positive source driving voltage | Driving voltage           |
 |  14 |  PWR |   V<sub>GH</sub> | Positive gate driving voltage   | Driving voltage           |
