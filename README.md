@@ -2,16 +2,17 @@
 
 > Electronic Paper Display
 
-- [Dot matrix font family](font-family.md)
 - [PINOUT Definition](PINOUT)
 - [List of Display](epd-display.csv)
-- [List of Driver IC](https://cursedhardware.github.io/epd-driver-ic/)
 - [List of Sensor](sensors)
-- [List of Provider](providers.md)
-- [List of Reseller](resellers.md)
-- [List of Reference](references.md)
 - [Caveats](caveats.md)
+
+## References
+
 - <https://aka.pw/epd-datasheet>
+- <https://cursedhardware.github.io/epd-driver-ic/>
+- <https://cursedhardware.github.io/awesome-embedded-display/EPD.html>
+- <https://cursedhardware.github.io/awesome-embedded-display/font-family.html>
 
 ## LICENSE
 
