@@ -6,7 +6,7 @@
 
 ## Reference design
 
-- <https://v4.cecdn.yun300.cn/100001_1909185148/DESPI-C1248_SCH%20V1.0.pdf>
+- [DESPI-C1248_SCH.pdf](../schematics/DESPI-C1248_SCH.pdf)
 
 ## Connector
 
@@ -49,7 +49,6 @@
 
 [bs1]: SPI-24PIN.md#bs1
 [busy]: SPI-24PIN.md#busy
-[csn]: SPI-24PIN.md#csn
 [dcn]: SPI-24PIN.md#dcn
 [rese]: SPI-24PIN.md#rese
 [resn]: SPI-24PIN.md#resn

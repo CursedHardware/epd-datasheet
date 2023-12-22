@@ -6,7 +6,7 @@
 
 ## Reference design
 
-- <https://cetest02.cn-bj.ufileos.com/100001_1909185148/DESPI-C102_SCH%20V1.0.pdf>
+- [DESPI-C102_SCH.pdf](../schematics/DESPI-C102_SCH.pdf)
 
 ## Connector
 

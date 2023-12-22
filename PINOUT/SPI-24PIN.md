@@ -2,7 +2,7 @@
 
 ## Reference design
 
-- <http://pmoc98298.pic37.websiteonline.cn/upload/DESPI-C01-sch-V11.pdf>
+- [DESPI-C01_SCH.pdf](../schematics/DESPI-C01_SCH.pdf)
 - <https://github.com/MarvelousBlack/epd2spi>
 - <https://oshwhub.com/ludas/mo-shui-ping-qu-dong>
 - <https://www.waveshare.com/w/upload/5/57/2.13inch_e-Paper_HAT_Schematic.pdf>
