@@ -3,7 +3,7 @@
 ## Reference design
 
 - [DESPI-C01_SCH.pdf](../schematics/DESPI-C01_SCH.pdf)
-- <https://github.com/MarvelousBlack/epd2spi>
+- [EPD2SPI_SCH.pdf](../schematics/EPD2SPI_SCH.pdf) <https://github.com/MarvelousBlack/epd2spi>
 - <https://oshwhub.com/ludas/mo-shui-ping-qu-dong>
 - <https://www.waveshare.com/w/upload/5/57/2.13inch_e-Paper_HAT_Schematic.pdf>
 - <https://www.waveshare.com/w/upload/5/5b/1.54inch_e-Paper_Schematic.pdf>
